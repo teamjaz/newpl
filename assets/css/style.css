@@ -342,6 +342,9 @@ padding: 80px 0px ;
 		margin-bottom: 0;
 		text-align: center;
 	}
+		.emailbox{
+		width: 100%!important;
+	}
 }
 @media(max-width:768px){
 	.ovdrop{
