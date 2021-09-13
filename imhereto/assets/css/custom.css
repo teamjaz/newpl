@@ -33,7 +33,7 @@ a:hover{
 	/* color: white!important; */
 }
 .area{
-	padding: 60px 0px;
+	padding: 60px 0px 40px 0px;
 }
 .fw100{
     font-weight: 100;
@@ -51,7 +51,7 @@ a:hover{
     font-weight: 500;
 }
 .fw600{
-    font-weight: 600;
+    font-weight: 600!important;
 }
 .fw700{
     font-weight: 700;
@@ -77,7 +77,7 @@ a:hover{
     font-weight: 600;
     color: var(--dblue);
     font-size: 35px;
-    text-transform: capitalize;
+    text-transform: capitalize!important;
 }
 
 .tc{
@@ -360,7 +360,26 @@ margin-top: 15px;
     margin: 40px 10px 0px 10px;
     border-radius: 8px;
 }
+.ibtn:hover{
+    background-color: var(--lblue);
+    color: #fff;
 
+}
+.ibtn1{
+    background-color: var(--lblue);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 8px 16px;
+    margin: 40px 0px 0px 0px;
+    border-radius: 8px;
+}
+.ibtn1:hover{
+    background-color: var(--lblue);
+    color: #fff;
+
+}
 .form{
     width: 100%;
 }
@@ -392,6 +411,151 @@ margin-top: 15px;
 }
 
 
+.banner img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.mbview{
+    display: flex;
+    justify-content: center;
+}
+
+.fottermaintext{
+    font-size: 18px;
+}
+.allfw400 ul li{
+    font-weight: 400!important;
+}
+.aif-ul ul li
+{
+    margin: 5px 0;
+    font-size: 14px;
+    color: var(--gtxt);
+    font-weight: 400;
+    list-style: disc;
+}
+.indisc li{
+    list-style-type:circle!important;
+}
+.inb-ser ul {
+    list-style-position: inside !important;
+}
+.custom_pane {
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.main-para-1 {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--gtxt);
+    font-weight: 400;
+}
+
+.cutomcontrol .nav a{
+    font-size: 18px;
+    background-color: white;
+    color: var(--gtxt);
+    font-weight: 600;
+    margin: 5px 0;
+    padding: 15px 20px;
+    width: auto;
+    border-radius: 10px;
+}
+.cutomcontrol .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+background-color: white;
+box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+color: var(--dblue);
+font-weight: 600;
+}
+
+.scard_img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.scard_img img{
+    max-width: 50px;
+}
+.scardimg_overlay{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 5px 5px rgba(0,0,0,0.1);
+
+}
+.scardtext h3{
+    text-align: center;
+    font-size: 16px;
+    color: var(--dblue);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.scards{
+    padding: 5px;
+    margin: 10px;
+}
+.accordion_one, .accordion_two {
+    -webkit-box-shadow: 0 5px 30px rgb(41 41 59 / 10%);
+    box-shadow: 0 5px 30px rgb(41 41 59 / 10%);
+    background: #ffffff;
+    padding: 3.66rem;
+    border-radius: 15px;
+}
+.accordion_one .accordion-single:first-child, .accordion_two .accordion-single:first-child {
+    padding-top: 0;
+}
+.accordion_one .accordion-single, .accordion_two .accordion-single {
+    border-bottom: 1px solid #e4e8ed;
+}
+.accordion_one .accordion-single h6 a, .accordion_two .accordion-single h6 a {
+    color: var(--dblue);
+    display: block;
+    position: relative;
+    padding: .33rem 2rem .66rem 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+.accordion-contents p{
+    color: var(--gtxt);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.accordion_one .accordion-single h6 a[aria-expanded="true"]:before, .accordion_two .accordion-single h6 a[aria-expanded="true"]:before {
+    position: absolute;
+    content: '\f110';
+    font-family: "LineAwesome";
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #4d6de6;
+}
+
+
+.accordion_one .accordion-single h6 a[aria-expanded="false"]:before, .accordion_two .accordion-single h6 a[aria-expanded="false"]:before {
+    position: absolute;
+    content: '\f113';
+    font-family: "LineAwesome", sans-serif;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+
+
 
 
 
@@ -401,8 +565,9 @@ margin-top: 15px;
 
 
 @media(max-width:768px){
-    .form input{
+    .form {
         width: 97%!important;
+
     }
 }
 
@@ -415,7 +580,9 @@ margin-top: 15px;
     .ud1::after{
         width: 80%;
     left: 10%;
-
+    }
+    .mbviewbtn{
+        font-size: 14px!important;
     }
 
 .backbtn a{
@@ -425,6 +592,29 @@ margin-top: 15px;
     margin-left: 20%;
 }
 .form input{
-    width: 97%!important;
+    width: 96%!important;
 }
+ .mbview{
+    display: block;
+}
+.mbview .ibtn{
+    display: block;
+    margin: 15px auto;
+    width: 80%;
+    text-align: center;
+}
+.allul .noul ul li{
+    font-size: 17px;
+    font-weight: 400;
+}
+.stitle{
+    font-size: 25px;
+}
+.tpara1{
+    font-size: 17px;
+}
+.allul ul li{
+    font-size: 17px;
+}
+
 }
